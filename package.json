@@ -1,0 +1,37 @@
+{
+  "name": "react-ecommerce-backend",
+  "version": "1.0.0",
+  "description": "the backend of sick fits react-ecommerce",
+  "scripts": {
+    "start": "nodemon -e js,graphql -x node src/index.js",
+    "dev": "nodemon -e js,graphql -x node --inspect src/index.js",
+    "test": "jest",
+    "deploy": "prisma deploy --env-file variables.env"
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.7.0",
+    "bcryptjs": "2.4.3",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^7.0.0",
+    "graphql": "^14.2.1",
+    "graphql-cli": "^3.0.11",
+    "graphql-yoga": "^1.17.4",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.11",
+    "nodemailer": "^6.1.1",
+    "nodemon": "^1.18.11",
+    "npm-run-all": "^4.1.5",
+    "prisma": "^1.31.1",
+    "prisma-binding": "^2.3.10",
+    "stripe": "^6.29.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "url": "wesbos.com"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  }
+}
