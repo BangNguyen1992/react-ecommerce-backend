@@ -1,16 +1,22 @@
+# Public API for frontend
+
 type User {
-  id: ID!,
+  id: ID!
   name: String!
 }
 
-type Dog {
-  name: String!
-}
+# import * from './generated/prisma.graphql'
 
 type Mutation {
-  createDog(name: String!): Dog
+  createItem(
+    title: String
+    description: String
+    image: String
+    largeImage: String
+    price: Int
+  ): Item!
 }
 
 type Query {
-  dogs: [Dog]
+  items: [Item]!
 }
