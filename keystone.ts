@@ -3,6 +3,7 @@ import { config, createSchema } from '@keystone-next/keystone/schema';
 import { createAuth } from '@keystone-next/auth';
 import { withItemData, statelessSessions } from '@keystone-next/keystone/session';
 import { User } from './schemas/User';
+import { Product } from './schemas/Product';
 
 const databaseURL = process.env.DATABASE_URL;
 
@@ -37,6 +38,7 @@ export default withAuth(
     lists: createSchema({
       // TODO: Add schema items
       User,
+      Product,
     }),
     ui: {
       // TODO: Change this for roles
