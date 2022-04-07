@@ -34,7 +34,6 @@ export default withAuth(
     db: {
       adapter: 'mongoose',
       url: databaseURL,
-      // TODO: Add data seeding
     },
     lists: createSchema({
       // TODO: Add schema items

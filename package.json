@@ -1,12 +1,11 @@
 {
-  "name": "sick-fits-backend",
+  "name": "react-ecommerce-backend",
   "version": "2.0.0",
   "private": true,
   "author": "Wes Bos",
   "license": "MIT",
   "scripts": {
     "dev": "keystone-next",
-    "seed-data": "keystone-next --seed-data",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
@@ -53,19 +52,18 @@
     "@keystone-next/fields": "^4.1.1",
     "@keystone-next/keystone": "^9.3.0",
     "@keystone-next/types": "^12.0.0",
-    "@keystonejs/server-side-graphql-client": "^1.1.2",
-    "@types/nodemailer": "^6.4.0",
-    "dotenv": "^8.2.0",
-    "next": "^10.0.5",
+    "@keystonejs/server-side-graphql-client": "^2.1.2",
+    "dotenv": "^16.0.0",
+    "next": "^10.2.3",
     "nodemailer": "^6.7.3",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "stripe": "^8.130.0"
+    "stripe": "^8.215.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.18.0",
     "@typescript-eslint/parser": "^5.18.0",
-    "@babel/eslint-parser": "^7.17.0",
+    "@types/nodemailer": "^6.4.4",
     "babel-eslint": "^10.1.0",
     "eslint": "^8.12.0",
     "eslint-config-airbnb": "^19.0.4",
